@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: white;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 1);
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#diplay {
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0;
+}
+
+#edit label {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+#edit input{
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.buttons button:nth-child(1) {
+    background: #ffff00;
+}
+.buttons button:nth-child(2) {
+    background: #ff6262;
+}
+.buttons button:nth-child(3) {
+    background: #11ff00;
+}
