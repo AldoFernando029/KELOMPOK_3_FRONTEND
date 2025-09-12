@@ -7,13 +7,13 @@ function updateDisplay() {
   let mins = Math.floor((timeLeft % 3600) / 60);
   let secs = timeLeft % 60;
 
-  document.getElementById("timer-display").textContent =
+  document.getElementById("display").textContent =
     String(hrs).padStart(2, '0') + ":" +
     String(mins).padStart(2, '0') + ":" +
     String(secs).padStart(2, '0');
 }
 
-function startTimer() {
+function mulaiTimer() {
   if (isRunning || timeLeft <= 0) return;
 
   isRunning = true;
@@ -37,11 +37,11 @@ function resetTimer() {
   updateDisplay();
 }
 
-function showEdit() {
-  document.getElementById("edit-area").style.display = "block";
+function lihatEdit() {
+  document.getElementById("edit").style.display = "block";
 }
 
-function saveTime() {
+function simpanTimer() {
   let hrs = parseInt(document.getElementById("hours").value) || 0;
   let mins = parseInt(document.getElementById("minutes").value) || 0;
   let secs = parseInt(document.getElementById("seconds").value) || 0;
@@ -49,7 +49,7 @@ function saveTime() {
   timeLeft = hrs * 3600 + mins * 60 + secs;
   updateDisplay();
 
-  document.getElementById("edit-area").style.display = "none";
+  document.getElementById("edit").style.display = "none";
 }
 
 // tampil awal
