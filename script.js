@@ -55,3 +55,45 @@ function simpanTimer() {
 // tampil awal
 updateDisplay();
 
+
+// toggle menu background
+function toggleThemeMenu() {
+  const menu = document.getElementById("themeMenu");
+  if (menu.style.display === "" || menu.style.display === "none") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+}
+window.toggleThemeMenu = toggleThemeMenu;
+
+function setGambar(imageFile) {
+  if(imageFile) {
+    document.body.style.backgroundImage = `url(${imageFile})`;
+    document.body.style.backgroundColor = "";
+    localStorage.setItem("bgImage", imageFile);
+  }
+}
+
+function resetBackground() {
+  document.body.style.backgroundColor = "#ffffff"; 
+  document.body.style.backgroundImage = "";
+  localStorage.removeItem("bgColor");
+  localStorage.removeItem("bgImage");
+}
+
+window.setGambar = setGambar;
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedColor = localStorage.getItem("bgColor");
+  const savedImage = localStorage.getItem("bgImage");
+
+  if (savedImage) {
+    document.body.style.backgroundImage = `url(${savedImage})`;
+    document.getElementById("Temagambar").value = savedImage;
+  }else {
+    document.body.style.backgroundColor = "#ffffff";
+  }
+});
+
+
