@@ -70,9 +70,11 @@ window.toggleThemeMenu = toggleThemeMenu;
 // buat ngeset bg image
 
 function setGambar(imageFile) {
-  if(imageFile) {
-    document.body.style.backgroundImage = `url(${imageFile})`;
-    document.body.style.backgroundColor = "";
+  if (imageFile && imageFile !== "pilih Gambar") {
+    document.body.style.backgroundImage = `url('${imageFile}')`;
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center";
     localStorage.setItem("bgImage", imageFile);
   }
 }

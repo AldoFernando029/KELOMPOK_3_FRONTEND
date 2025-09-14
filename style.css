@@ -67,6 +67,12 @@ h1 {
 
 }
 
+#edit button {
+    display: block;
+    margin: 10px auto;  
+}
+
+
 .buttons button {
     font-size: 16px;
     padding: 10px 20px;
