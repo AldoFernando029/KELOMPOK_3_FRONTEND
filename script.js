@@ -67,6 +67,8 @@ function toggleThemeMenu() {
 }
 window.toggleThemeMenu = toggleThemeMenu;
 
+// buat ngeset bg image
+
 function setGambar(imageFile) {
   if(imageFile) {
     document.body.style.backgroundImage = `url(${imageFile})`;
@@ -75,6 +77,7 @@ function setGambar(imageFile) {
   }
 }
 
+// buat ngerest bg ke awal
 function resetBackground() {
   document.body.style.backgroundColor = "#ffffff"; 
   document.body.style.backgroundImage = "";
@@ -85,7 +88,6 @@ function resetBackground() {
 window.setGambar = setGambar;
 
 window.addEventListener("DOMContentLoaded", () => {
-  const savedColor = localStorage.getItem("bgColor");
   const savedImage = localStorage.getItem("bgImage");
 
   if (savedImage) {
