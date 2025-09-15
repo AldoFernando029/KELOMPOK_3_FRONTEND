@@ -56,7 +56,7 @@ Setiap kali nilai detik berubah, tampilan timer (hh:mm:ss) diperbarui dengan rum
 - Menit = floor((timeLeft % 3600) / 60)
 - Detik = timeLeft % 60
 
-Proses ini berulang hingga `timeLeft` mencapai 0. Saat timer habis:  
+Proses ini berulang hingga timeLeft mencapai 0. Saat timer habis:  
 1. Timer berhenti (clearInterval dipanggil).  
 2. Alarm berbunyi untuk memberi peringatan.  
 3. Pesan “Waktu habis!” muncul pada layar.  
@@ -65,7 +65,7 @@ Proses ini berulang hingga `timeLeft` mencapai 0. Saat timer habis:
 
 ### **3.1. Algoritma Countdown Timer**
 1. Input waktu (jam, menit, detik).  
-2. Konversi semua waktu menjadi total detik (`timeLeft`).  
+2. Konversi semua waktu menjadi total detik (timeLeft).  
 3. Tampilkan format hh:mm:ss(hours:minutte:second).  
 4. Jika tombol Start ditekan → timer berjalan dengan setInterval.  
 5. timeLeft berkurang setiap 1 detik.  
