@@ -50,7 +50,7 @@ Total Detik = (Jam × 3600) + (Menit × 60) + Detik
 Total Detik = (1 × 3600) + (30 × 60) + 20 = 5420 detik
 
 
-Setelah total detik dihitung, timer dijalankan menggunakan fungsi setInterval yang mengurangi nilai `timeLeft` sebanyak 1 setiap detik.
+Setelah total detik dihitung, timer dijalankan menggunakan fungsi setInterval yang mengurangi nilai timeLeft sebanyak 1 setiap detik.
 Setiap kali nilai detik berubah, tampilan timer (hh:mm:ss) diperbarui dengan rumus:  
 - Jam = floor(timeLeft / 3600)
 - Menit = floor((timeLeft % 3600) / 60)
