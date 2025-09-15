@@ -101,3 +101,52 @@ h1 {
     margin-top: 20px;
     background-color: transparent;
 }
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    #display {
+        font-size: 50px;
+    }
+
+    .jamlucu .jam-bg {
+        width: 160px;
+    }
+
+    #edit input {
+        width: 60px;
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 9px 18px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #display {
+        font-size: 36px;
+    }
+
+    .jamlucu .jam-bg {
+        width: 120px;
+    }
+
+    #edit input {
+        width: 50px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
